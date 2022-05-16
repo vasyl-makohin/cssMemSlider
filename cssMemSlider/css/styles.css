@@ -4,7 +4,10 @@
   --font-15: 0.9375em;
   /* Colors */
   --color-black: #000000;
+  --color-dark: #333333;
+  --color-gray: #ddd;
   --color-white: #ffffff;
+  --color-white-light: #f1f1f1;
   --color-blue: #71abfe;
   --color-gray: #9b9bac;
   --count-slider: 4;
@@ -38,10 +41,10 @@ body {
   min-height: 100vh;
   font-family: var(--font-roboto);
   font-size: var(--font-15);
-  line-height: 1.875em;
+  line-height: 1.5;
   font-weight: 400;
   color: var(--color-white);
-  background-color: var(--color-black);
+  background-color: var(--color-dark);
 }
 
 .container {
@@ -85,7 +88,12 @@ footer {
 
 .wrapper {
   margin: 0 auto;
-  max-width: calc(100% - 40%);
+  background-color: var(--color-black);
+  box-shadow: 0.0625em 0.125em 0em #111;
+  padding: 1.5em;
+  border-radius: 0.3125em;
+  border: 0.625em solid var(--color-white-light);
+  border-bottom-width: 4em;
 }
 
 .input-radio {
@@ -111,7 +119,6 @@ footer {
 .slider {
   width: 100%;
   overflow: hidden;
-  border-radius: 0.9375em;
   margin-bottom: 1.25em;
   box-shadow: 0 0 0 0.25em solid var(--color-blue);
 }
@@ -131,8 +138,9 @@ footer {
 }
 
 .slider__figure {
+  padding: 0.9375em;
   width: 100%;
-  height: calc(100vh - 30vh);
+  height: calc(100vh - 40vh);
   background-color: var(--color-white);
 }
 
@@ -217,11 +225,14 @@ footer {
 }
 
 .pagination {
+  margin-right: -0.3125em;
   display: flex;
   align-items: center;
 }
 
 .pagination__item {
+  padding: 0;
+  margin: 0;
 }
 
 .pagination__bullet {
@@ -243,4 +254,38 @@ footer {
 .pagination__bullet:hover span {
   border-color: var(--color-white);
   background-color: var(--color-white);
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .wrapper {
+    max-width: calc(100% - 20%);
+    padding: 2.5em;
+    border-radius: 0.625em;
+    border: 0.125em solid var(--color-gray);
+  }
+}
+
+@media only screen and (max-width: 47.9375em) {
+  .wrapper {
+    max-width: 100%;
+    padding: 4.212em 1.0998em 2.5em;
+  }
+
+  .details {
+    flex-direction: column-reverse;
+  }
+
+  .description {
+    padding-right: 0;
+  }
+
+  .description__item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pagination {
+    margin-right: 0;
+    margin-bottom: 1.25em;
+  }
 }
