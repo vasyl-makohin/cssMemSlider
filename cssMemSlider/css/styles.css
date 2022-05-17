@@ -256,6 +256,11 @@ footer {
   background-color: var(--color-white);
 }
 
+.pagination__bullet:active span {
+  border-color: var(--color-gray);
+  background-color: var(--color-gray);
+}
+
 @media only screen and (max-width: 63.9375em) {
   .wrapper {
     max-width: calc(100% - 20%);
