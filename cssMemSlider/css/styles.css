@@ -22,11 +22,6 @@
   box-sizing: inherit;
 }
 
-::selection {
-  color: var(--color-black);
-  background-color: var(--color-white);
-}
-
 html {
   scroll-behavior: smooth;
 }
