@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./assets/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CSS Mem Slider" />
+  <title>CSS Mem Slider</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>CSS Mem Slider</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="wrapper">
+
+        <input type="radio" name="slide" id="slide-1" class="input-radio" checked />
+        <input type="radio" name="slide" id="slide-2" class="input-radio" />
+        <input type="radio" name="slide" id="slide-3" class="input-radio" />
+        <input type="radio" name="slide" id="slide-4" class="input-radio" />
+
+        <div class="slider">
+          <div class="slider__row">
+            <div class="slider__item">
+              <div class="slider__figure">
+                <img src="./assets/img/slide-1.jpg" alt="slide-1" />
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__figure">
+                <img src="./assets/img/slide-2.jpg" alt="slide-2" />
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__figure">
+                <img src="./assets/img/slide-3.jpg" alt="slide-3" />
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__figure">
+                <img src="./assets/img/slide-4.jpg" alt="slide-4" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="description">
+            <div class="description__row">
+              <div class="description__item">
+                <span class="description__text">Html CSS JS Mr Website dev human</span>
+              </div>
+              <div class="description__item">
+                <span class="description__text">Is this how you learn HTML</span>
+              </div>
+              <div class="description__item">
+                <span class="description__text">React For Your Relationship Status</span>
+              </div>
+              <div class="description__item">
+                <span class="description__text">I'm tired of those JS Developer memes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <div class="pagination__item">
+              <label for="slide-1" class="pagination__bullet"><span></span></label>
+            </div>
+            <div class="pagination__item">
+              <label for="slide-2" class="pagination__bullet"><span></span></label>
+            </div>
+            <div class="pagination__item">
+              <label for="slide-3" class="pagination__bullet"><span></span></label>
+            </div>
+            <div class="pagination__item">
+              <label for="slide-4" class="pagination__bullet"><span></span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Vasyl Makohin &copy; 2022</p>
+    </div>
+  </footer>
+</body>
+
+</html>
